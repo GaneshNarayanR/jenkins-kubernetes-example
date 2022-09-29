@@ -20,7 +20,7 @@ spec:
       - name: regcred1
       containers:
       - name: nodejsapp
-        image: nodejsapp:latest
+        image: 10.210.0.83:8085/nodejsapp:latest
         imagePullPolicy: Always
         ports:
           - containerPort: 3000
