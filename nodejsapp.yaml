@@ -16,14 +16,12 @@ spec:
       labels:
         app: nodejsapp
     spec:
-      imagePullSecrets:
-      - name: regcred1
       containers:
       - name: nodejsapp
-        image: 10.210.0.83:8085/nodejsapp:latest
+        image: nodejsapp:latest
         imagePullPolicy: Always
-        ports:
-          - containerPort: 3000
+      imagePullSecrets:
+      - name: regcred
 ---
 apiVersion: v1
 kind: Service
