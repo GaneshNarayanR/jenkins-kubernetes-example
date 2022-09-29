@@ -18,10 +18,10 @@ spec:
     spec:
       containers:
       - name: nodejsapp
-        image: 10.210.0.83:8085/nodejsapp:latest
+        image: nodejsapp:latest
         imagePullPolicy: Always
       imagePullSecrets:
-      - name: regcred
+      - name: regcred2
 ---
 apiVersion: v1
 kind: Service
