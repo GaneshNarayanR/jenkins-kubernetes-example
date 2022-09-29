@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: nodejsapp
-        image: 10.210.0.83:8085/nodejsapp:latest
+        image: 10.210.0.83:8085/nodejsapp
         imagePullPolicy: Always
       imagePullSecrets:
       - name: regcred2
